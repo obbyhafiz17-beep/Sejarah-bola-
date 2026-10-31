@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d0a">
+  <meta name="description" content="Jelajahi sejarah sepak bola, kisah legenda, klub ikonik, dan momen yang mengubah permainan. Belajar bola dengan cara yang seru dan interaktif.">
+  <meta property="og:title" content="Sejarah Bola — Cerita di Balik Beautiful Game">
+  <meta property="og:description" content="Dari lapangan pertama hingga momen paling ikonik. Temukan cerita sepak bola yang mungkin belum kamu tahu.">
+  <meta property="og:type" content="website">
+  <title>Sejarah Bola — Cerita di Balik Beautiful Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23b7f36b'/%3E%3Ctext x='50' y='67' text-anchor='middle' font-size='53' font-family='Arial' font-weight='900' fill='%23090d0a'%3ESB%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="topline"><span class="live-dot"></span> ARSIP CERITA SEPAK BOLA <span class="topline-divider">/</span> DARI 1863 SAMPAI SEKARANG</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Sejarah Bola, beranda">
+      <span class="brand-mark">SB<span>+</span></span>
+      <span class="brand-name">SEJARAH<span>BOLA.</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navigasi utama">
+      <a href="#home" data-nav="home">Beranda</a>
+      <a href="#jelajahi" data-nav="jelajahi">Jelajahi</a>
+      <a href="#sejarah" data-nav="sejarah">Sejarah</a>
+      <a href="#legenda" data-nav="legenda">Legenda</a>
+      <a href="#klub" data-nav="klub">Klub</a>
+      <a href="#kuis" data-nav="kuis">Kuis</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" type="button" aria-label="Cari cerita" data-action="go-search">⌕</button>
+      <a class="saved-link" href="#tersimpan">Tersimpan <span class="saved-count" id="savedCount">0</span></a>
+    </div>
+  </header>
+  <main id="app" tabindex="-1">
+    <div class="initial-loading"><span class="loader"></span><p>Menyiapkan arsip sepak bola...</p></div>
+  </main>
+  <nav class="mobile-nav" aria-label="Navigasi mobile">
+    <a href="#home" data-nav="home"><span>⌂</span>Home</a>
+    <a href="#jelajahi" data-nav="jelajahi"><span>◈</span>Jelajahi</a>
+    <a href="#sejarah" data-nav="sejarah"><span>◷</span>Sejarah</a>
+    <a href="#kuis" data-nav="kuis"><span>✳</span>Kuis</a>
+    <a href="#tersimpan" data-nav="tersimpan"><span>♡</span>Saved</a>
+  </nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
